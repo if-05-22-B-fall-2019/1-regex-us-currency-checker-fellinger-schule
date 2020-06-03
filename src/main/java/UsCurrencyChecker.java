@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class UsCurrencyChecker {
     public static Matcher getMatcher(String usCurrencyString) {
-        String patternString = "\\$ ?\\d+(.\\d{0,2})?";
+        String patternString = "\\$ ?\\d+(\\.\\d{1,2})?";
 
         Pattern pattern = Pattern.compile(patternString);
 
